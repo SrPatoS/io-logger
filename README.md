@@ -13,7 +13,7 @@ To use the `AppLogger`, simply include the `AppLogger` class in your project. Yo
 Here is how you can use the `AppLogger` in your project:
 
 ```typescript
-import { logger } from './path/to/AppLogger';
+import { logger } from "io-logger";
 
 // Log an info message
 logger.info('This is an info message');
@@ -98,7 +98,7 @@ Creates a new instance of `AppLogger`.
 ## Example
 
 ```typescript
-import { logger } from './path/to/AppLogger';
+import { logger } from "io-logger";
 
 // Example usage
 logger.info('Informational message');
