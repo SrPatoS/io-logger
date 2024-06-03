@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "*",
-    "tsc": "*"
+    "typescript": "^5.4.5",
+    "@types/node": "^20.14.0"
   }
 }
