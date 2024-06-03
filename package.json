@@ -1,5 +1,5 @@
 {
-  "name": "simple-logger",
+  "name": "io-logger",
   "version": "0.0.1",
   "main": "index.js",
   "license": "ISC",
