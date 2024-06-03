@@ -1,0 +1,10 @@
+{
+  "name": "@fast/logger",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "ISC",
+  "peerDependencies": {
+    "@types/node": "*",
+    "tsc": "*"
+  }
+}
