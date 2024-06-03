@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "ISC",
-  "peerDependencies": {
+  "dependencies": {
     "@types/node": "*",
     "tsc": "*"
   }
