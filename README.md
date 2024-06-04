@@ -1,4 +1,4 @@
-# FastLogger
+# IoLogger
 
 ## Overview
 
@@ -7,6 +7,10 @@ The `AppLogger` class is a simple logger utility designed to log messages with d
 ## Installation
 
 To use the `AppLogger`, simply include the `AppLogger` class in your project. You can copy the class definition into your project or import it as a module if provided.
+
+```sh
+npm install io-logger
+```
 
 ## Usage
 
