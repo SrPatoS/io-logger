@@ -1,4 +1,4 @@
-type LoggerLevelsTypes = "info" | "alert" | "error" | "job";
+type LoggerLevelsTypes = "info" | "alert" | "error" | "job" | "debug";
 
 /**
  * Class representing a logger for application messages.
@@ -50,6 +50,14 @@ export class AppLogger {
     }
 
     /**
+     * Logs a debug message.
+     * @param message - The debug message to log.
+     */
+    public debug(message: string): void {
+        this.write(message, "debug");
+    }
+
+    /**
      * Writes a message to the stdout stream with a specified log level.
      * @param message - The message to log.
      * @param level - The log level of the message.
@@ -69,7 +77,8 @@ export class AppLogger {
             info: "\x1b[32m",   // Green
             alert: "\x1b[33m",  // Yellow
             error: "\x1b[31m",  // Red
-            job: "\x1b[34m"     // Blue
+            job: "\x1b[34m",     // Blue
+            debug: "\x1b[35m",   // Magenta
         };
 
         const resetColor = "\x1b[0m";
