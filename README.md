@@ -34,6 +34,9 @@ logger.error(error);
 
 // Log a job-related message
 logger.job('This is a job message');
+
+// Log a debug message
+logger.debug('This is a debug message');
 ```
 
 ## API
@@ -41,7 +44,7 @@ logger.job('This is a job message');
 ### LoggerLevelsTypes
 
 ```typescript
-type LoggerLevelsTypes = "info" | "alert" | "error" | "job";
+type LoggerLevelsTypes = "info" | "alert" | "error" | "job" | "debug";
 ```
 
 Enumeration of possible log levels.
@@ -82,6 +85,12 @@ Creates a new instance of `AppLogger`.
 
     - `message`: The job-related message to log.
 
+    - `job(message: string): void`
+
+  Logs a debug-related message.
+
+    - `message`: The debug-related message to log.
+    - `debug(message: string): void`
 #### Private Methods
 
 - `write(message: string, level: LoggerLevelsTypes): void`
@@ -110,6 +119,7 @@ logger.alert('Alert message');
 logger.error('Error message');
 logger.error(new Error('Error object message'));
 logger.job('Job related message');
+logger.debug('This is a debug message');
 ```
 
 This will produce color-coded output in the console for each log level.
